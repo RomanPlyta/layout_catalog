@@ -4,10 +4,7 @@
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   box-sizing: border-box;
-
-  &:hover {
-    transition-duration: 300ms;
-  }
+  transition-duration: 300ms;
 
   &__img {
     display: block;
@@ -22,6 +19,7 @@
     line-height: 18px;
     font-weight: 500;
     color: $text-accent-color;
+    transition-duration: 300ms;
   }
 
   &__code {
@@ -81,6 +79,15 @@
     text-decoration: none;
     text-transform: uppercase;
     background-color: $main-color;
+    transition-duration: 300ms;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+
+    .product-card__name {
+      color: $product-name-active-color;
+    }
   }
 
   &__buy-button:hover {
